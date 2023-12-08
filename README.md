@@ -27,3 +27,12 @@ about it at the start of each recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+---
+
+For my implementation of the fib function I used the default variables
+position and array. Position (pos) is meant to increase by one before the
+recursive call is made and the size of the array should also be increased. I think
+a good invariant would be to check that the values of postion and array.length
+are the same. The consistancy between pos and arr.length is necessary for the fibonacci sequence to be created correctly , as the invariant would make sure that index aligns with the position of the new fibonacci number.
+
