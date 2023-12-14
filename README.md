@@ -36,3 +36,6 @@ recursive call is made and the size of the array should also be increased. I thi
 a good invariant would be to check that the values of postion and array.length
 are the same. The consistancy between pos and arr.length is necessary for the fibonacci sequence to be created correctly , as the invariant would make sure that index aligns with the position of the new fibonacci number.
 
+An invariant about the contents of the array could be, like we discussed in class, a list that contains the values form 0 to n that 
+checks the position n in the fibonacci lsit by adding all the values of the invariant list up to position n.
+
