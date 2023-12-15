@@ -30,12 +30,8 @@ your answer to this markdown file.
 
 ---
 
-For my implementation of the fib function I used the default variables
-position and array. Position (pos) is meant to increase by one before the
-recursive call is made and the size of the array should also be increased. I think
-a good invariant would be to check that the values of postion and array.length
-are the same. The consistancy between pos and arr.length is necessary for the fibonacci sequence to be created correctly , as the invariant would make sure that index aligns with the position of the new fibonacci number.
 
-An invariant about the contents of the array could be, like we discussed in class, a list that contains the values form 0 to n that 
-checks the position n in the fibonacci lsit by adding all the values of the invariant list up to position n.
-
+An invariant about the contents of the array could be checking the values of the fibonacci array such that if you subtract the element being tested by the previous
+element in the list you get the lement two positions down, so if im checking arr[6] it should be arr[6]-arr[5] = arr[4], (with special cases for the first two positions of 0 and 1)
+that  way we know before we start our next iteration of the
+recursion that all our fibonacci numbers are correct
