@@ -21,8 +21,8 @@ function fib(n, pos = 0, arr = []){
     return arr;
 }
 
-/*
+
 console.log(fib(5))
 console.log(fib(6))
 console.log(fib(7))
-*/
+
